@@ -44,6 +44,15 @@ class cronapt::configure (
     #
     # Actions
     #
+    file { '/etc/cron-apt/action.d' :
+        ensure  => 'directory',
+        owner   => 'root',
+        group   => 'root',
+        mode    => '755',
+        recurse => true,
+        purge   => true,
+        require => Class['cronapt::install'],
+    }
     if ('update' in $actions) {
         file { '/etc/cron-apt/action.d/0-update' :
             ensure  => 'file',
