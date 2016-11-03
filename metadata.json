@@ -1,6 +1,6 @@
 {
   "name": "mniedzielski-cronapt",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "author": "Mark Niedzielski",
   "summary": "Configures the Debian package 'cron-apt' to automatically control package updates via apt.",
   "license": "GPL-3.0+",
@@ -15,7 +15,7 @@
     },
     {
       "operatingsystem": "Ubuntu",
-      "operatingsystemrelease": [ "12.04", "14.04" ]
+      "operatingsystemrelease": [ "12.04", "14.04", "16.04" ]
     }
   ],
   "dependencies": [
